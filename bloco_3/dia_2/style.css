@@ -1,0 +1,38 @@
+h1 {
+  font-size: 65px;
+  color: orange;
+  font-family: sans-serif;
+}
+
+ul {
+  background-color: beige;
+}
+
+.muda-cor {
+  background-color: cornflowerblue;
+}
+
+body {
+  font-size: 16px;
+}
+
+p {
+  font-weight: 600;
+  font-size: 3em;
+  line-height: 1.5em;
+}
+
+#amarelo {
+  background-color: yellow;
+  font-style: italic;
+}
+
+#vermelho {
+  background-color: red;
+  text-align: center;
+}
+
+#marrom {
+  background-color: brown;
+  text-decoration: underline dotted;
+}
