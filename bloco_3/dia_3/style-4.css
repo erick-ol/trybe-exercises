@@ -1,0 +1,35 @@
+div:hover {
+  border: 1px dashed #000;
+}
+
+h3 {
+  color: #fff;
+}
+
+.primaria {
+  background-color: #ff0000;
+}
+
+.secundaria {
+  background-color: #008000	;
+}
+
+.complementar {
+  background-color: #5900ff;
+}
+
+.escura {
+  background-color: #2b0909;
+}
+
+.clara {
+  background-color: #aaff94;
+}
+
+.cores div:nth-child(3) {
+  height: 50px;
+}
+
+.cores div:nth-child(odd) h3{
+  font-style: italic;
+}
