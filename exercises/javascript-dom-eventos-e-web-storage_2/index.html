@@ -60,7 +60,7 @@
       // Exercício 1
       let tituloH1 = document.createElement('h1');
       document.body.appendChild(tituloH1);
-      document.getElementsByTagName('h1')[0].innerText = 'Exercício 5.2 - JavaScript DOM';
+      tituloH1.innerText = 'Exercício 5.2 - JavaScript DOM';
 
       // Exercício 2
       let divMainContent = document.createElement('div');
@@ -71,6 +71,11 @@
       let divCenterContent = document.createElement('div');
       divCenterContent.className = 'center-content';
       divMainContent.appendChild(divCenterContent);
+
+      // Exercício 4
+      let pNaCenterContent = document.createElement('p');
+      divCenterContent.appendChild(pNaCenterContent);
+      pNaCenterContent.innerText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
     </script>
   </body>
 </html>
