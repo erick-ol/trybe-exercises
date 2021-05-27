@@ -126,6 +126,12 @@
 
       // Exercício 10.5
       divCenterContent.style.backgroundColor = 'green';
+
+      // Exercício 10.6
+      let listaLi = document.getElementsByTagName('li');
+      for (let i = listaLi.length - 1, count = 0; count < 2; i -= 1, count += 1) {
+        ulRightContent.removeChild(listaLi[i]);
+      }
     </script>
   </body>
 </html>
