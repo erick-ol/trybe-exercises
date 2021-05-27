@@ -92,6 +92,15 @@
       imgLeftContent.className = 'small-image';
       imgLeftContent.setAttribute('src', 'https://picsum.photos/200');
       divLeftContent.appendChild(imgLeftContent);
+
+      // Exercício 8
+      let ulRightContent = document.createElement('ul');
+      divRightContent.appendChild(ulRightContent);
+      for (let i = 0; i < 10; i += 1) {
+        let ilRightContent = document.createElement('li');
+        ulRightContent.appendChild(ilRightContent);
+        ilRightContent.innerText = `${i+1}`
+      }
     </script>
   </body>
 </html>
