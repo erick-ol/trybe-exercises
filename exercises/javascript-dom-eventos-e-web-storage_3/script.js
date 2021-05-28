@@ -70,3 +70,29 @@ function createFridayButton(buttonString) {
   button.innerText = buttonString;
 }
 createFridayButton('Sexta-Feira');
+
+// Exercício 5
+function createFridays() {
+  const fridays = [4,11,18,25];
+  let days = document.querySelectorAll('#days li');
+  for (let day of days) {
+    if (fridays.includes(parseInt(day.innerText))) {
+      day.classList.add('friday');
+    }
+  }
+}
+createFridays();
+
+let buttonFriday = document.getElementById('btn-friday');
+buttonFriday.addEventListener('click', changeFridayBackgroundColor);
+function changeFridayBackgroundColor() {
+  let fridayList = document.getElementsByClassName('friday');
+  const fridays = [4,11,18,25];
+  for (let i in fridayList) {
+    if (fridayList[i].innerText === 'Sextou!!') {
+      fridayList[i].innerText = fridays[i];
+    } else {
+      fridayList[i].innerText = 'Sextou!!';
+    }
+  }
+}
