@@ -27,3 +27,12 @@ function createDaysOfTheMonth() {
   }
 }
 createDaysOfTheMonth();
+
+// Exercício 2
+function createHolidayButton(buttonString) {
+  let button = document.createElement('button');
+  button.id = 'btn-holiday';
+  document.getElementsByClassName('buttons-container')[0].appendChild(button);
+  button.innerText = buttonString;
+}
+createHolidayButton('Feriados');
