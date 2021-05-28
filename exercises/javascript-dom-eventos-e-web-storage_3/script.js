@@ -61,3 +61,12 @@ function changeHolidayBackgroundColor() {
     }
   }
 }
+
+// Exercício 4
+function createFridayButton(buttonString) {
+  let button = document.createElement('button');
+  button.id = 'btn-friday';
+  document.getElementsByClassName('buttons-container')[0].appendChild(button);
+  button.innerText = buttonString;
+}
+createFridayButton('Sexta-Feira');
