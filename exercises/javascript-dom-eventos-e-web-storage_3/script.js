@@ -36,3 +36,28 @@ function createHolidayButton(buttonString) {
   button.innerText = buttonString;
 }
 createHolidayButton('Feriados');
+
+// Exercício 3
+function createHolidays() {
+  const holidays = [24,25,31];
+  let days = document.querySelectorAll('#days li');
+  for (let day of days) {
+    if (holidays.includes(parseInt(day.innerText))) {
+      day.classList = 'holiday';
+    }
+  }
+}
+createHolidays();
+
+let button = document.getElementById('btn-holiday');
+button.addEventListener('click', changeHolidayBackgroundColor);
+function changeHolidayBackgroundColor() {
+  let holidayList = document.getElementsByClassName('holiday');
+  for (let holiday of holidayList) {
+    if (holiday.style.backgroundColor) {
+      holiday.style.backgroundColor = '';
+    } else {
+      holiday.style.backgroundColor = 'rgba(193, 247, 207)';
+    }
+  }
+}
