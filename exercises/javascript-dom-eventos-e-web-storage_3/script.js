@@ -96,3 +96,16 @@ function changeFridayBackgroundColor() {
     }
   }
 }
+
+// Exercício 6
+let days = document.querySelectorAll('#days li');
+for (let day of days) {
+  day.addEventListener('mouseover', mouseEmCima);
+  day.addEventListener('mouseleave', mouseFora);
+}
+function mouseEmCima(event) {
+  event.target.style.fontSize = '25px';
+}
+function mouseFora(event) {
+  event.target.style.fontSize = '20px';
+}
