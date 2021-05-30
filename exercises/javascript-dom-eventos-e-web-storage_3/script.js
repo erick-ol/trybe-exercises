@@ -120,4 +120,13 @@ function createTask(task) {
   myTasks.appendChild(br);
 }
 createTask('Estudar Events');
-createTask('Terminar os exercícios');
+
+// Exercício 8
+function setColor(color) {
+  let myTasks = document.getElementsByClassName('my-tasks')[0];
+  let divTask = document.createElement('div');
+  myTasks.appendChild(divTask);
+  divTask.classList = ('task');
+  divTask.style.backgroundColor = color;
+}
+setColor('blue');
