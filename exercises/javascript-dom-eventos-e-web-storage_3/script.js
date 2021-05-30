@@ -141,3 +141,17 @@ function changeClassSelect() {
     btnEventSelect.classList.remove('selected');
   }
 }
+
+// Exercício 10
+for (let day of days) {
+  day.addEventListener('click', changeBackgroundTask);
+}
+function changeBackgroundTask(event) {
+  if (btnEventSelect.classList['value'] !== 'task') {
+    if (event.target.style.backgroundColor === 'aquamarine') {
+      event.target.style.backgroundColor = '';
+    } else {
+      event.target.style.backgroundColor = 'aquamarine';
+    }
+  }
+}
