@@ -129,4 +129,15 @@ function setColor(color) {
   divTask.classList = ('task');
   divTask.style.backgroundColor = color;
 }
-setColor('blue');
+setColor('aquamarine');
+
+// Exercício 9
+let btnEventSelect = document.getElementsByClassName('task')[0];
+btnEventSelect.addEventListener('click', changeClassSelect);
+function changeClassSelect() {
+  if (btnEventSelect.classList['value'] === 'task') {
+    btnEventSelect.classList.add('selected');
+  } else {
+    btnEventSelect.classList.remove('selected');
+  }
+}
