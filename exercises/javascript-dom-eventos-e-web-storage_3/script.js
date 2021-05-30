@@ -109,3 +109,15 @@ function mouseEmCima(event) {
 function mouseFora(event) {
   event.target.style.fontSize = '20px';
 }
+
+// Exercício 7
+function createTask(task) {
+  let myTasks = document.getElementsByClassName('my-tasks')[0];
+  let spanTask = document.createElement('span');
+  let br = document.createElement('br');
+  myTasks.appendChild(spanTask);
+  spanTask.innerText = task;
+  myTasks.appendChild(br);
+}
+createTask('Estudar Events');
+createTask('Terminar os exercícios');
