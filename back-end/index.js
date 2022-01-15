@@ -10,14 +10,16 @@ const calculate = (n1, n2, n3) => {
   });
 }
 
-calculate(10, 15, 20)
-  .then(resolve => console.log(resolve))
-  .catch(error => console.log(error))
+// Exercício 2
+const random = () => {
+  return Math.floor(Math.random() * 100 + 1);
+}
 
-calculate(1, 1, '1')
-  .then(resolve => console.log(resolve))
-  .catch(error => console.log(error))
+const callCalculate = () => {
+  const numbers = Array.from({ length: 3 }).map(random);
+  calculate(...numbers)
+    .then(result => console.log(result))
+    .catch(err => console.error(err.message))
+}
 
-calculate(1, 1, 1)
-  .then(resolve => console.log(resolve))
-  .catch(error => console.log(error))
+callCalculate();
