@@ -15,11 +15,14 @@ const random = () => {
   return Math.floor(Math.random() * 100 + 1);
 }
 
-const callCalculate = () => {
+const callCalculate = async () => {
   const numbers = Array.from({ length: 3 }).map(random);
-  calculate(...numbers)
-    .then(result => console.log(result))
-    .catch(err => console.error(err.message))
+  try {
+    const total = await calculate(...numbers);
+    console.log(total);
+  } catch (err) {
+    console.error(err);
+  }
 }
 
 callCalculate();
